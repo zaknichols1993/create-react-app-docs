@@ -7,6 +7,7 @@ class App extends Component {
       {
         "id": 1,
         "name": "Leanne Graham",
+        "age": 27,
         "username": "Bret",
         "email": "Sincere@april.biz",
         "address": {
@@ -30,6 +31,7 @@ class App extends Component {
       {
         "id": 2,
         "name": "Ervin Howell",
+        "age": 40,
         "username": "Antonette",
         "email": "Shanna@melissa.tv",
         "address": {
@@ -53,6 +55,7 @@ class App extends Component {
       {
         "id": 3,
         "name": "Clementine Bauch",
+        "age": 99,
         "username": "Samantha",
         "email": "Nathan@yesenia.net",
         "address": {
@@ -76,6 +79,7 @@ class App extends Component {
       {
         "id": 4,
         "name": "Patricia Lebsack",
+        "age": 40,
         "username": "Karianne",
         "email": "Julianne.OConner@kory.org",
         "address": {
@@ -99,6 +103,7 @@ class App extends Component {
       {
         "id": 5,
         "name": "Chelsey Dietrich",
+        "age": 11,
         "username": "Kamren",
         "email": "Lucio_Hettinger@annie.ca",
         "address": {
@@ -122,6 +127,7 @@ class App extends Component {
       {
         "id": 6,
         "name": "Mrs. Dennis Schulist",
+        "age": 53,
         "username": "Leopoldo_Corkery",
         "email": "Karley_Dach@jasper.info",
         "address": {
@@ -145,6 +151,7 @@ class App extends Component {
       {
         "id": 7,
         "name": "Kurtis Weissnat",
+        "age": 9,
         "username": "Elwyn.Skiles",
         "email": "Telly.Hoeger@billy.biz",
         "address": {
@@ -168,6 +175,7 @@ class App extends Component {
       {
         "id": 8,
         "name": "Nicholas Runolfsdottir V",
+        "age": 36,
         "username": "Maxime_Nienow",
         "email": "Sherwood@rosamond.me",
         "address": {
@@ -191,6 +199,7 @@ class App extends Component {
       {
         "id": 9,
         "name": "Glenna Reichert",
+        "age": 76,
         "username": "Delphine",
         "email": "Chaim_McDermott@dana.io",
         "address": {
@@ -214,6 +223,7 @@ class App extends Component {
       {
         "id": 10,
         "name": "Clementina DuBuque",
+        "age": 22,
         "username": "Moriah.Stanton",
         "email": "Rey.Padberg@karina.biz",
         "address": {

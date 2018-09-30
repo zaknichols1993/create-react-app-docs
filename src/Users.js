@@ -5,24 +5,40 @@ import React from 'react';
 // we can destructure and grab the users only. Very useful, but
 // challenging concept.
 
-const Users = ({users}) => {
-    const userList = users.map(user => {
+const Users = ({ users }) => {
+  const userList = users.map(user => {
+    if (user.age < 40) {
       return (
-      <div className="user" key={user.id}>
-        <div> id: {user.id} </div>
-        <div> Name: {user.name} </div>
-        <div> Email: {user.email} </div>
-        <div> company: {user.company.name} </div>
-        <div> Website: {user.website} </div>
-      </div>
+        <div className="user" key={user.id}>
+          <div> id: {user.id} </div>
+          <div> Name: {user.name} </div>
+          <div> Age: {user.age} </div>
+          <div> Email: {user.email} </div>
+          <div> company: {user.company.name} </div>
+          <div> Website: {user.website} </div>
+        </div>
       )
-    })
-    return(
-      <div className="users">
-        {userList}
-      </div>
-    )
-  }
-
+    } else {
+      return null
+    }
+  })
+  // const userList = users.map(user => {
+  //   return user.age < 40 ? (
+  //     <div className="user" key={user.id}>
+  //       <div> id: {user.id} </div>
+  //       <div> Name: {user.name} </div>
+  //       <div> Age: {user.age} </div>
+  //       <div> Email: {user.email} </div>
+  //       <div> company: {user.company.name} </div>
+  //       <div> Website: {user.website} </div>
+  //     </div>
+  //   ) : null
+  // })
+  return (
+    <div className="users">
+      {userList}
+    </div>
+  )
+}
 
 export default Users;
