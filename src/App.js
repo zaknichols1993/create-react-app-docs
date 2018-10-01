@@ -247,6 +247,11 @@ class App extends Component {
       }
     ]
   }
+
+  addUser = (user) => {
+
+  }
+
   render() {
     return (
       <div className="App">
@@ -254,7 +259,7 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <Users users={this.state.users} />
-        <AddUser />
+        <AddUser addUser={this.addUser} />
       </div>
     );
   }
