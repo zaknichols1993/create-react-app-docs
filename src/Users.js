@@ -7,14 +7,13 @@ import React from 'react';
 
 const Users = ({ users }) => {
   const userList = users.map(user => {
-    if (user.age < 40) {
+    if (user.age) {
       return (
         <div className="user" key={user.id}>
           <div> id: {user.id} </div>
           <div> Name: {user.name} </div>
           <div> Age: {user.age} </div>
           <div> Email: {user.email} </div>
-          <div> company: {user.company.name} </div>
           <div> Website: {user.website} </div>
         </div>
       )

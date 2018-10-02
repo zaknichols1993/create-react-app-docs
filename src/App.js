@@ -249,9 +249,13 @@ class App extends Component {
   }
 
   addUser = (user) => {
-
+    user.id = Math.random();
+    let users = [...this.state.users, user];
+    this.setState({
+      users: users
+    });
   }
-
+  
   render() {
     return (
       <div className="App">
