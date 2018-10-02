@@ -5,7 +5,7 @@ import React from 'react';
 // we can destructure and grab the users only. Very useful, but
 // challenging concept.
 
-const Users = ({ users }) => {
+const Users = ({ users, deleteUser }) => {
   const userList = users.map(user => {
     if (user.age) {
       return (
@@ -15,6 +15,7 @@ const Users = ({ users }) => {
           <div> Age: {user.age} </div>
           <div> Email: {user.email} </div>
           <div> Website: {user.website} </div>
+          <button onClick={() => {deleteUser(user.id)}}>Delete User</button>
         </div>
       )
     } else {
