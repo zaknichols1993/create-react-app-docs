@@ -1,4 +1,5 @@
 import React from 'react';
+import './Users.css';
 
 // Destructuring used in the the function parameters.
 // instead of passing props and defining them in a variable
