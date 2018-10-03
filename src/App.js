@@ -264,6 +264,15 @@ class App extends Component {
       users: users
     })
   }
+
+  componentDidMount = () => {
+    console.log('mounted');
+  }
+
+  componentDidUpdate = (prevProps, prevState) => {
+    console.log('updated');
+    console.log(prevProps, prevState)
+  }
   
   render() {
     return (
